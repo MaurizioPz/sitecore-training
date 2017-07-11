@@ -1,0 +1,66 @@
+﻿.difficulty-circle,
+.difficulty-circle label::before
+{
+    display: inline-block;
+}
+ 
+.difficulty-circle label:hover,
+.difficulty-circle label:hover ~ label
+{
+    color: #189800;
+}
+ 
+.difficulty-circle *
+{
+    margin-left: 8px;
+    padding: 0;
+}
+ 
+.difficulty-circle input
+{
+    display: none;
+}
+ 
+.difficulty-circle
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+ 
+.difficulty-circle label
+{
+    color: #ccc;
+}
+ 
+.difficulty-circle label::before
+{
+    content: "●";
+    width: 5px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+ 
+.difficulty-circle input:checked ~ label.green
+{
+    color: #189800;
+}
+
+.difficulty-circle input:checked ~ label.yellow
+{
+    color: #f5b301;
+}
+
+.difficulty-circle input:checked ~ label.red
+{
+    color: red;
+}
+
+ 
+.difficulty-circle-disabled
+{    
+    -webkit-pointer-events: none;
+    -moz-pointer-events: none;
+    pointer-events: none;
+}
