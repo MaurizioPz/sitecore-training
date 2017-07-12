@@ -18,8 +18,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <title>Event Page - The Adventure Company</title>
+    <meta name="description" content="@Html.Sitecore().Field("MetaDescription", new { DisableWebEdit = true })" />
+    <title>@Html.Sitecore().Field("MetaTitle", new { DisableWebEdit = true })</title>
     <link rel="stylesheet" type="text/css" href="/Css/vendor.min.css" />
     <link rel="stylesheet" type="text/css" href="/Css/niteflight.min.css" />
     <link rel="stylesheet" type="text/css" href="/Css/addition.css">
@@ -161,12 +161,12 @@
                         <div class="col-lg-8">
                             <!-- [Event Info] -->
                             <header>
-                                <h1>Climbing the Face of Half Dome</h1>
+                                <h1>@Html.Sitecore().Field("MetaTitle")</h1>
                             </header>
                             <!-- [Event Details] -->
                             <div class="well">
-                                <p class="text-muted">Start Date: June 28, 2016</p>
-                                <p class="text-muted">Duration: 4</p>
+                                <p class="text-muted">Start Date: @Html.Sitecore().Field("Start Date", new { format = "dd MMMM yyyy" })</p>
+                                <p class="text-muted">Duration: @Html.Sitecore().Field("Duration")</p>
                                 <span class="text-muted">Difficulty:</span>
                                 <div class="difficulty-circle">
                                     <input type="radio" name="group-2" id=group-2-0 value=10 />
@@ -194,25 +194,14 @@
                             <!-- [/Event Details] -->
                             <!-- [Event Content] -->
                             <div class="lead">
-                                <p>
-                                    The face of Half Dome in Yosemite National Park rises 5000 feet above the valley floor. Glaciers have cleaved the
-                                    dome clear in half, leaving an incredible slab of rock that has become the most iconic rock climb in the world.
-                                    The Adventure Company sponsors this is a grade VI climb and participants must have experience climbing. The tour
-                                    will be led by our most experienced climbing guide who has extensive experience climbing in Yosemite.
-                                </p>
+                               @Html.Sitecore().Field("ContentBody")
                             </div>
                             <div class="article image">
-                                <img src="Images/Climbing-the-Face-of-Half-Dome.jpg" class="img-responsive" alt="Female climber rappellling" width="1000"
-                                     height="568" />
+                                @Html.Sitecore().Field("Event Image", new { mw = 1000, mh = 568, @class="img-responsive" })
                             </div>
                             <div class="highlights">
                                 <h4>Trip Highlights</h4>
-                                <ul>
-                                    <li>Jaw-dropping view down the waterfall from the top of Vernal Falls</li>
-                                    <li>Staying at the gorgeous Ahwahnee Hotel, a National Historic Landmark</li>
-                                    <li>Reaching the summit and taking in the spectacular views!</li>
-                                    <li>The wildflowers and manzanitas of sun-drenched Wawona meadows</li>
-                                </ul>
+                                @Html.Sitecore().Field("Highlights")
                             </div>
                             <!-- [/Event Content] -->
                             <!-- [/Event Info] -->
