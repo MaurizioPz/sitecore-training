@@ -15,5 +15,6 @@ namespace events.tac.local.Models
         public HtmlString Heading { get; set; }
         public HtmlString Intro { get; set; }
         public HtmlString EventImage { get; set; }
+        public object CssClass { get; internal set; }
     }
 }

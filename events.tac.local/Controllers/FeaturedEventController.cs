@@ -1,4 +1,5 @@
 ﻿using events.tac.local.Models;
+using Sitecore;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Web.UI.WebControls;
 using System;
@@ -20,12 +21,24 @@ namespace events.tac.local.Controllers
         private FeaturedEvent CreateModel()
         {
             var item = RenderingContext.Current.Rendering.Item;
-            return new FeaturedEvent()
+            var model = new FeaturedEvent()
             {
                 Heading = new HtmlString(FieldRenderer.Render(item, "ContentHeading")),
                 EventImage = new HtmlString(FieldRenderer.Render(item, "Event Image", "mw=400")),
                 Intro = new HtmlString(FieldRenderer.Render(item, "ContentIntro")),
             };
+            var parameters = RenderingContext.Current.Rendering.Parameters;
+            var cssClass = parameters["CssClass"];
+            if (!string.IsNullOrEmpty(cssClass))
+            {
+                var refItem = Context.Database.GetItem(cssClass);
+                if (refItem == null)
+                    model.CssClass = cssClass;
+                else
+                    model.CssClass = refItem["class"];
+
+            }
+            return model;
         }
     }
 }
