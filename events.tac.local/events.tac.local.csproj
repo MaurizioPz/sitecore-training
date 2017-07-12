@@ -137,12 +137,22 @@
     <Content Include="Images\Rock-Climbing-in-the-Czech-Republic.jpg" />
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Navigation.js" />
     <Content Include="Scripts\Sitecore.Foundation.Theming.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EventIntroController.cs" />
+    <Compile Include="Models\EventIntro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +229,8 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Views\TAC\Events\Layouts\Home.cshtml" />
     <Content Include="Views\TAC\Events\Layouts\Events.cshtml" />
+    <Content Include="Views\EventIntro\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -228,8 +240,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -159,52 +159,7 @@
                             </aside>
                         </div>
                         <div class="col-lg-8">
-                            <!-- [Event Info] -->
-                            <header>
-                                <h1>@Html.Sitecore().Field("MetaTitle")</h1>
-                            </header>
-                            <!-- [Event Details] -->
-                            <div class="well">
-                                <p class="text-muted">Start Date: @Html.Sitecore().Field("Start Date", new { format = "dd MMMM yyyy" })</p>
-                                <p class="text-muted">Duration: @Html.Sitecore().Field("Duration")</p>
-                                <span class="text-muted">Difficulty:</span>
-                                <div class="difficulty-circle">
-                                    <input type="radio" name="group-2" id=group-2-0 value=10 />
-                                    <label class=red for=group-2-0></label>
-                                    <input type="radio" checked="checked" name="group-2" id=group-2-1 value=9 />
-                                    <label class=red for=group-2-1></label>
-                                    <input type="radio" name="group-2" id=group-2-2 value=8 />
-                                    <label class=red for=group-2-2></label>
-                                    <input type="radio" name="group-2" id=group-2-3 value=7 />
-                                    <label class=yellow for=group-2-3></label>
-                                    <input type="radio" name="group-2" id=group-2-4 value=6 />
-                                    <label class=yellow for=group-2-4></label>
-                                    <input type="radio" name="group-2" id=group-2-5 value=5 />
-                                    <label class=yellow for=group-2-5></label>
-                                    <input type="radio" name="group-2" id=group-2-6 value=4 />
-                                    <label class=green for=group-2-6></label>
-                                    <input type="radio" name="group-2" id=group-2-7 value=3 />
-                                    <label class=green for=group-2-7></label>
-                                    <input type="radio" name="group-2" id=group-2-8 value=2 />
-                                    <label class=green for=group-2-8></label>
-                                    <input type="radio" name="group-2" id=group-2-9 value=1 />
-                                    <label class=green for=group-2-9></label>
-                                </div>
-                            </div>
-                            <!-- [/Event Details] -->
-                            <!-- [Event Content] -->
-                            <div class="lead">
-                               @Html.Sitecore().Field("ContentBody")
-                            </div>
-                            <div class="article image">
-                                @Html.Sitecore().Field("Event Image", new { mw = 1000, mh = 568, @class="img-responsive" })
-                            </div>
-                            <div class="highlights">
-                                <h4>Trip Highlights</h4>
-                                @Html.Sitecore().Field("Highlights")
-                            </div>
-                            <!-- [/Event Content] -->
-                            <!-- [/Event Info] -->
+                           @Html.Sitecore().Rendering("/sitecore/layout/Renderings/TAC/Events/Event Intro")
                             <hr />
                             <!-- [Comments List] -->
                             <div class="comments">
