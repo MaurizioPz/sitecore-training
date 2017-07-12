@@ -12,4 +12,32 @@
   <File Include="/Views/TAC/Events/Layouts/Events.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{B1202906-285E-446C-AA7E-805B583CDA09}</Item>
   </File>
+  <File Include="Views\TAC\Events\HomeContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{1A09CC26-09C7-44C6-8DB0-155D203A2718}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/HomeContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{1A09CC26-09C7-44C6-8DB0-155D203A2718}</Item>
+  </File>
+  <File Include="Views\TAC\Events\SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{272F7486-D572-4B65-98A6-46666B56296D}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/SideContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{272F7486-D572-4B65-98A6-46666B56296D}</Item>
+  </File>
+  <File Include="Views\TAC\Events\PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{068BB468-3866-41C8-BF9C-5C71764A6740}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/PageContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{068BB468-3866-41C8-BF9C-5C71764A6740}</Item>
+  </File>
+  <File Include="Views\TAC\Events\OneColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{FF159031-9A6D-4CE3-B45E-99F7FB65EE7A}</Item>
+  </File>
+  <File Include="/Views/TAC/Events/OneColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{FF159031-9A6D-4CE3-B45E-99F7FB65EE7A}</Item>
+  </File>
+  <File Include="Views\TAC\Events\TwoColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
+  <File Include="/Views/TAC/Events/TwoColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{354902F0-55FD-4762-B3A9-0FBFA996E902}</Item>
+  </File>
 </Project>

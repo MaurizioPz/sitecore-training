@@ -3,7 +3,7 @@
 @using Sitecore.Mvc.Presentation
 @model RenderingModel
 @{
-  Layout = null;
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -86,108 +86,7 @@
             </nav>
         </header>
         <!-- [/Page Header] -->
-        <!-- [Page Content] -->
-        <main>
-            <header class="page-header">
-                <div class="container">
-                    <!-- [Breadcrumb Navigation] -->
-                    <ol class="breadcrumb">
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="Event-Sections.html">Events</a></li>
-                        <li><a href="Event-List.html">Climbing</a></li>
-                        <li class="active"><a href="Event-Detail.html">Climbing the Face of Half Dome</a></li>
-                    </ol>
-                    <!-- [/Breadcrumb Navigation] -->
-                </div>
-            </header>
-            <section class="page-header">
-                <div class="container">
-                    <!-- [Two Columns] -->
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <aside>
-                                <!-- [Page Navigation] -->
-                                <h4><a href="Event-Categories.html">Events</a></h4>
-                                <div class="sidebar sidebar-static">
-                                    <ul class="nav nav-pills nav-stacked">
-                                        <li class="open">
-                                            <a href="Event-Overview.html">Climbing</a>
-                                            <ul class="nav nav-pills nav-stacked">
-                                                <li><a href="Event-Detail.html">Climbing Event A</a></li>
-                                                <li><a href="Event-Detail.html">Climbing Event B</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="Event-Overview.html">Cycling</a></li>
-                                        <li><a href="Event-Overview.html">Hiking</a></li>
-                                        <li><a href="Event-Overview.html">Skiing</a></li>
-                                    </ul>
-                                </div>
-                                <!-- [/Page Navigation] -->
-                                <!-- [Related Events] -->
-                                <div class="bg-primary side-widget">
-                                    <h4 class="text-uppercase">Other events you will like</h4>
-                                    <div class="sidebar">
-                                        <ul class="nav nav-pills nav-stacked">
-                                            <li>
-                                                <a href="#">Hiking in Spain</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Cycling tour of South Africa</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Magic Alaska</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- [/Related Events] -->
-                                <!-- [Subscribe to mailing list] -->
-                                <div class="side-widget">
-                                    <h4 class="text-uppercase">Our next events</h4>
-                                    <div class="sidebar">
-                                        <div class="text">Subscribe to our monthly newsletter and be the first to learn about our forthcoming events.</div>
-                                        <form action="#">
-                                            <div>
-                                                <input class="form-control" type="email" placeholder="your@email.com" name="email">
-                                            </div>
-                                            <input class="btn btn-default" type="submit" value="Subscribe">
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- [/Subscribe to mailing list] -->
-
-                            </aside>
-                        </div>
-                        <div class="col-lg-8">
-                           @Html.Sitecore().Rendering("/sitecore/layout/Renderings/TAC/Events/Event Intro")
-                            <hr />
-                            <!-- [Comments List] -->
-                            <div class="comments">
-                                <h4>What others have to say</h4>
-                                <div><strong>John</strong> &mdash; 05 Feb 2016</div>
-                                <blockquote>Fantastic hike, I did it in 2014, I can't wait to do it again!</blockquote>
-                                <div><strong>Kerry</strong> &mdash; 06 Feb 2016</div>
-                                <blockquote>It is too long, and not really worth it.</blockquote>
-                            </div>
-                            <!-- [/Comments List] -->
-                            <!-- [Comments Form] -->
-                            <div>
-                                <form action="#">
-                                    <div>
-                                        <input type="text" class="form-control" placeholder="Name" name="email">
-                                        <input type="text" class="form-control" placeholder="Add your comment here" name="comment">
-                                    </div>
-                                    <input type="submit" class="btn btn-default" value="Submit Comment">
-                                </form>
-                            </div>
-                            <!-- [/Comments Form] -->
-                        </div>
-                    </div>
-                    <!-- [/Two Columns] -->
-                </div>
-            </section>
-        </main>
-        <!-- [/Page Content] -->
+        @Html.Sitecore().Placeholder("main")
         <!-- [Footer Content] -->
         <footer>
             <div class="container">
