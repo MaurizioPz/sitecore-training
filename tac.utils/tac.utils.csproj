@@ -91,11 +91,13 @@
     <Compile Include="Abstractions\IRenderingContext.cs" />
     <Compile Include="Abstractions\ITranslate.cs" />
     <Compile Include="Helpers\ApplicationExtensions.cs" />
+    <Compile Include="Helpers\FormHandlerExtensions.cs" />
     <Compile Include="Helpers\NavigationExtensions.cs" />
     <Compile Include="Helpers\NavigationHelper.cs" />
     <Compile Include="Helpers\SitecoreExtensions.cs" />
     <Compile Include="Helpers\SitecoreHelper.cs" />
     <Compile Include="Helpers\TagHelper.cs" />
+    <Compile Include="Helpers\ValidateFormHandler.cs" />
     <Compile Include="Mvc\MvcTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SitecoreModels\SitecoreItem.cs" />

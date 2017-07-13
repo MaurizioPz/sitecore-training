@@ -152,10 +152,12 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
+    <Compile Include="Controllers\CommentsFormController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Controllers\FeaturedEventController.cs" />
     <Compile Include="Controllers\OverviewController.cs" />
     <Compile Include="Controllers\RelatedEventsController.cs" />
+    <Compile Include="Controllers\SubscribeFormController.cs" />
     <Compile Include="Models\EventIntro.cs" />
     <Compile Include="Models\FeaturedEvents.cs" />
     <Compile Include="Models\NavigationItem.cs" />
@@ -248,6 +250,10 @@
     <Content Include="Views\Breadcrumb\Index.cshtml" />
     <Content Include="Views\RelatedEvents\Index.cshtml" />
     <Content Include="Views\Overview\Index.cshtml" />
+    <Content Include="Views\SubscribeForm\Index.cshtml" />
+    <Content Include="Views\SubscribeForm\Confirmation.cshtml" />
+    <Content Include="Views\CommentsForm\Index.cshtml" />
+    <Content Include="Views\CommentsForm\Confirmation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -257,6 +263,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tac.utils\tac.utils.csproj">
+      <Project>{1c59f3aa-127d-4d46-92a9-8eb82692b76a}</Project>
+      <Name>tac.utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,17 @@
+﻿@using TAC.Utils.Helpers
+<!-- [Subscribe to mailing list] -->
+<div class="side-widget">
+    <h4 class="text-uppercase">Our next events</h4>
+    <div class="sidebar">
+        <div class="text">Subscribe to our monthly newsletter and be the first to learn about our forthcoming events.</div>
+        @using (Html.BeginForm())
+        {
+            @Html.FormHandler()
+            <div>
+                <input class="form-control" type="email" placeholder="your@email.com" name="email">
+            </div>
+            <input class="btn btn-default" type="submit" value="Subscribe">
+        }
+    </div>
+</div>
+<!-- [/Subscribe to mailing list] -->
