@@ -151,10 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
     <Compile Include="Controllers\FeaturedEventController.cs" />
     <Compile Include="Models\EventIntro.cs" />
     <Compile Include="Models\FeaturedEvents.cs" />
+    <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +241,7 @@
     <Content Include="Views\TAC\Events\OneColumn.cshtml" />
     <Content Include="Views\TAC\Events\TwoColumn.cshtml" />
     <Content Include="Views\FeaturedEvent\Index.cshtml" />
+    <Content Include="Views\Breadcrumb\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
