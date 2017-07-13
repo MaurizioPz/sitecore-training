@@ -1,0 +1,18 @@
+﻿@model IEnumerable<events.tac.local.Models.NavigationItem>
+
+
+<!-- [Related Events] -->
+<div class="bg-primary side-widget">
+    <h4 class="text-uppercase">Other events you will like</h4>
+    <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+            @foreach (var item in Model)
+            {
+            <li>
+                <a href="@item.URL">@item.Title</a>
+            </li>
+            }
+        </ul>
+    </div>
+</div>
+<!-- [/Related Events] -->
