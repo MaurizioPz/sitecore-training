@@ -48,6 +48,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libraries\Sitecore.Kernel.dll</HintPath>
@@ -137,7 +140,11 @@
     <Content Include="Images\Rock-Climbing-in-the-Czech-Republic.jpg" />
     <Content Include="Images\skiing-events.jpg" />
     <Content Include="Images\Skiing-the-Himalayas.jpg" />
+    <Content Include="Areas\Importer\Views\web.config" />
+    <Content Include="Areas\Importer\Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\Importer\Views\Events\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\commentsForm.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -151,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Importer\Controllers\EventsController.cs" />
+    <Compile Include="Areas\Importer\ImporterAreaRegistration.cs" />
+    <Compile Include="Areas\Importer\Models\Event.cs" />
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\CommentsFormController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
