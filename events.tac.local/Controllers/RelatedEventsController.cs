@@ -1,4 +1,5 @@
 ﻿using events.tac.local.Models;
+using Sitecore;
 using Sitecore.Data.Fields;
 using Sitecore.Links;
 using Sitecore.Mvc.Presentation;
@@ -16,7 +17,8 @@ namespace events.tac.local.Controllers
         public ActionResult Index()
         {
             var model = GetModel();
-            if (model.Any())
+            bool isInEdit = Context.PageMode.IsExperienceEditorEditing;
+            if (model.Any() || isInEdit)
                 return View(model);
 
             return new EmptyResult();
