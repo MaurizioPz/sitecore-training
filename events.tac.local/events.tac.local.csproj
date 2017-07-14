@@ -67,6 +67,13 @@
       <HintPath>..\..\Libraries\Sitecore.Analytics.Outcome.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\..\Libraries\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libraries\Sitecore.Kernel.dll</HintPath>
@@ -184,11 +191,14 @@
     <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\CommentsFormController.cs" />
     <Compile Include="Controllers\EventIntroController.cs" />
+    <Compile Include="Controllers\EventsListController.cs" />
     <Compile Include="Controllers\FeaturedEventController.cs" />
     <Compile Include="Controllers\OverviewController.cs" />
     <Compile Include="Controllers\RelatedEventsController.cs" />
     <Compile Include="Controllers\SubscribeFormController.cs" />
+    <Compile Include="Models\EventDetails.cs" />
     <Compile Include="Models\EventIntro.cs" />
+    <Compile Include="Models\EventList.cs" />
     <Compile Include="Models\FeaturedEvents.cs" />
     <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Models\OverviewItem.cs" />
@@ -284,6 +294,7 @@
     <Content Include="Views\SubscribeForm\Confirmation.cshtml" />
     <Content Include="Views\CommentsForm\Index.cshtml" />
     <Content Include="Views\CommentsForm\Confirmation.cshtml" />
+    <Content Include="Views\EventsList\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
