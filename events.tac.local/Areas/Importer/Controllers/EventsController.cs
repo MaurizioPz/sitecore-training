@@ -1,5 +1,6 @@
 ﻿using events.tac.local.Areas.Importer.Models;
 using Newtonsoft.Json;
+using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -50,7 +51,9 @@ namespace events.tac.local.Areas.Importer.Controllers
                         item["Difficulty Level"] = ev.Difficulty.ToString();
                         item["Duration"] = ev.Duration.ToString();
                         item["Highlights"] = ev.Highlights;
-                        item["Start Date"] = Sitecore.DateUtil.ToIsoDate(ev.StartDate);
+                        item["Start Date"] = DateUtil.ToIsoDate(ev.StartDate);
+                        item[FieldIDs.Workflow] = "{97EE4F91-4053-4F5B-A000-F86CABB14781}";
+                        item[FieldIDs.WorkflowState] = "{870CA50B-225D-4481-A839-EB99E83F40E8}";
                     }
                 }
             }
